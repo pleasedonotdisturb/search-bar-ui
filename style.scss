@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #55e6c1;
+}
+
+.search-box {
+	background: #2d3436;
+	height: 50px;
+	border-radius: 100px;
+	padding: 15px;
+
+	.search-btn {
+		color: #fff;
+		float: right;
+		font-size: 20px;
+		text-decoration: none;
+		line-height: 15px;
+	}
+
+	.search-input {
+		width: 0;
+		border: none;
+		outline: none;
+		background: none;
+		float: left;
+		padding: 0;
+		padding-right: 0;
+		color: #fff;
+		font-size: 15px;
+		line-height: 15px;
+		transition: 0.3s;
+	}
+
+	&:hover .search-input {
+		width: 250px;
+		padding-right: 6px;
+	}
+}
